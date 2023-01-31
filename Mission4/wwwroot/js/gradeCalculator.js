@@ -16,7 +16,6 @@
 
     numericGrade = (parseInt(assignment) * .5) + (parseInt(group) * .1) + (parseInt(quiz) * .1) + (parseInt(midterm) * .1) + (parseInt(final) * .1) + (parseInt(intex) * .1);
 
-    alert(numericGrade);
     //determine the letter grade
 
     if (numericGrade >= 94) {
@@ -48,5 +47,5 @@
     // write results on the page
 
     $('#letterGrade').html( "Letter Grade: " + String(letterGrade));
-    $('#numericGrade').html("Numeric Grade: " + String(numericGrade));
+    $('#numericGrade').html("Numeric Grade: " + String(Math.round(numericGrade)));
         });

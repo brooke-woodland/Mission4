@@ -48,8 +48,11 @@
 
         // write results on the page
 
-        $('#letterGrade').html( "Letter Grade: " + String(letterGrade));
-        $('#numericGrade').html("Numeric Grade: " + String(Math.round(numericGrade)));
+   
+    $('#letterGrade').html( "Letter Grade: " + String(letterGrade));
+    $('#numericGrade').html("Numeric Grade: " + String(Math.round(numericGrade)));
+    alert(numericGrade);
+    alert(letterGrade)
       
 
 });

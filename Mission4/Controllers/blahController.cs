@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Mission4.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Mission4.Controllers
 {
-    public class HomeController : Controller
+    public class blahController : Controller
     {
         public IActionResult Index()
         {
@@ -16,7 +20,7 @@ namespace Mission4.Controllers
         }
         [HttpPost]
 
-        public IActionResult Calculator(GradeValidation model)
+        public IActionResult GradeCalculator(GradeValidation model)
 
         { 
             return View();

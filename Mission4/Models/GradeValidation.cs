@@ -8,6 +8,7 @@ namespace Mission4.Models
 {
     public class GradeValidation
     {
+        //range validation for inputs
         [Required]
         [Range(0, 100, ErrorMessage = "Assignment grade must be between 0 and 100")]
         public int Assignment { get; set; }

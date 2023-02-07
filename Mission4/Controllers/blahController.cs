@@ -20,6 +20,7 @@ namespace Mission4.Controllers
         }
         [HttpPost]
 
+        // passes the model (and validation)
         public IActionResult GradeCalculator(GradeValidation model)
 
         { 

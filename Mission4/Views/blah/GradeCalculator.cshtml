@@ -4,7 +4,7 @@
 @{
 
 }
-
+ <!-- loads the model into this cshtml page -->
 @model GradeValidation;
 
 @{
@@ -12,9 +12,11 @@
 
 <h2>Grade Calculator</h2>
 
+<!-- this is where the validation messages will appear-->
 <div asp-validation-summary="All"></div>
 
 <form method="post">
+    <!-- the asp-for attribute connects the inputs to the model variables -->
     <label>Assignment Grade:</label>
     <input id="assignment"asp-for="Assignment" type="text" />
 

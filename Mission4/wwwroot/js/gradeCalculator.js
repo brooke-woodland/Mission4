@@ -46,13 +46,9 @@
             letterGrade = 'E';
         };
 
-        // write results on the page
+        // write results into an alert
+    alert('You finished with a(n) ' + String(letterGrade) + ' and a percentage of ' + String(Math.round(numericGrade))+'%.');
 
-   
-    $('#letterGrade').html( "Letter Grade: " + String(letterGrade));
-    $('#numericGrade').html("Numeric Grade: " + String(Math.round(numericGrade)));
-    alert(numericGrade);
-    alert(letterGrade)
       
 
 });

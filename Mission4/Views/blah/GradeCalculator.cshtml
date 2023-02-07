@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+@model Mission4.Models.GradeValidation
+
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("Index", "Home")) ;
+
+<h2>Grade Calculator</h2>
+<form>
+    <label>Assignment Grade:</label>
+    <input id="assignment"asp-for="Assignment" type="text" />
+    @Html.TextBoxFor(m => m.Assignment)
+    @Html.ValidationMessageFor(m => m.Assignment)
+    <br /><br />
+    <label>Group Project Grade:</label>
+
+    <input id="group" asp-for="Group" type="text" />
+    @Html.TextBoxFor(m => m.Group)
+    @Html.ValidationMessageFor(m => m.Group)
+    <br /><br />
+    <label>Midterm Exam Grade:</label>
+    <input id="midterm" asp-for="Midterm" type="text" />
+    @Html.TextBoxFor(m => m.Midterm)
+    @Html.ValidationMessageFor(m => m.Midterm)
+    <br /> <br />
+    <label>Quiz Grade:</label>
+    <input id="quiz" asp-for="Quiz" type="text" />
+    @Html.TextBoxFor(m => m.Quiz)
+    @Html.ValidationMessageFor(m => m.Quiz)
+    <br /><br />
+    <label>Final Exam Grade:</label>
+    <input id="final" asp-for="Final" type="text" />
+    @Html.TextBoxFor(m => m.Final)
+    @Html.ValidationMessageFor(m => m.Final)
+    <br /> <br />
+    <label>INTEX Grade:</label>
+    <input id="intext" asp-for="Intex" type="text" />
+    @Html.TextBoxFor(m => m.Intex)
+    @Html.ValidationMessageFor(m => m.Intex)
+
+
+    <input id="calculate" type="button" value="Grade Calculator" />
+</form>
+
+
+<div asp-validation-summary="All"></div>
+
+<h4 class="result" id="numericGrade"></h4>
+<h4 class="result" id="letterGrade"></h4>
+
+
